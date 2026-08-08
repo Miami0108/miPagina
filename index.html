@@ -8,46 +8,5 @@
     </style>
 </head>
 <body>
-    <!-- Contenedor donde se generarán los corazones de fondo -->
-    <div class="floating-hearts" id="floating-hearts"></div>
-    
-    <h1>Hola, Ellencita</h1>
-    <div class="heart">❤️</div>
-    <p>Hola te amo mucho corazón de mi vida, eres la mejor del mundo.</p>
-    <p>(Sí, está hecho con chat, pero prometo aprender para hacerte uno bonito 😞, en lo mientras quiero que tengas algo bonito para poder ver cada que te metas aquí). </p>
-
-    <script>
-        // Lógica para crear un efecto de corazones flotantes de fondo
-        function createHeart() {
-            const heart = document.createElement('div');
-            // Usamos diferentes emojis al azar
-            const emojis = ['💖', '💕', '🌸', '✨'];
-            heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
-            
-            // Propiedades iniciales
-            heart.style.position = 'absolute';
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.top = '100vh';
-            heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
-            heart.style.opacity = Math.random() * 0.5 + 0.3;
-            heart.style.transition = 'transform 5s linear, top 5s linear';
-            
-            document.getElementById('floating-hearts').appendChild(heart);
-
-            // Iniciar movimiento hacia arriba
-            setTimeout(() => {
-                heart.style.top = '-10vh';
-                heart.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
-            }, 50);
-
-            // Eliminar el elemento cuando sale de la pantalla para no saturar la memoria
-            setTimeout(() => {
-                heart.remove();
-            }, 5000);
-        }
-
-        // Generar un nuevo corazón cada 400 milisegundos
-        setInterval(createHeart, 400);
-    </script>
-</body>
+    <p>Mi páginita en línea</p>
 </html>
