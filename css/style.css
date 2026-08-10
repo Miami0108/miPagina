@@ -1,0 +1,9 @@
+p, h2, h4 {
+    text-align: center;
+}
+
+#album1{
+   background-color: #ffb7f4; 
+    padding: 20px;
+    border-radius: 10px;
+}
