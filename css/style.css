@@ -14,6 +14,17 @@ p, h2, h4 {
     border-radius: 10px;
 }
 
+#album3{
+   background-color: #a6b4c2; 
+    padding: 20px;
+    border-radius: 10px;
+}
+#xd{
+background-color: antiquewhite;
+padding: 20px;
+border-radius: 50px;
+}
+
 body {
     background-color: #ffffff
     text-align: center;
