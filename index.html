@@ -153,6 +153,47 @@
        </article>
      </section>
 
+     <section class="comments" id="comentarios">
+       <div class="comments-header">
+         <p class="eyebrow">Tu opinión importa</p>
+         <h2>Déjame tu comentario</h2>
+       </div>
+
+       <form id="comment-form" class="comment-form">
+         <div class="field-row">
+           <label>
+             <span>Nombre</span>
+             <input type="text" name="name" placeholder="Tu nombre" required />
+           </label>
+
+           <label>
+             <span>Álbum</span>
+             <select name="album" required>
+               <option value="">Selecciona uno</option>
+               <option value="The Divine Femenine">The Divine Femenine</option>
+               <option value="What Happened To The Heart?">What Happened To The Heart?</option>
+               <option value="Roy">Roy</option>
+             </select>
+           </label>
+         </div>
+
+         <label>
+           <span>Comentario</span>
+           <textarea
+             name="message"
+             rows="5"
+             placeholder="Cuéntame qué te gustó o qué te gustaría escuchar después..."
+             required
+           ></textarea>
+         </label>
+
+         <div class="form-actions">
+           <button type="submit" class="button primary">Enviar comentario</button>
+           <p id="form-message" class="form-message" aria-live="polite"></p>
+         </div>
+       </form>
+     </section>
+
      <section class="about" id="about">
        <div class="about-card">
          <p class="eyebrow">Sobre este espacio</p>
@@ -168,5 +209,33 @@
    <footer class="footer">
      <p>Hecho por luisito. © 2026</p>
    </footer>
+
+   <script>
+     const form = document.getElementById("comment-form");
+     const formMessage = document.getElementById("form-message");
+    const recipientEmail = "arroyo.flores.luisdayan@gmail.com";
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = form.elements.name.value.trim();
+      const album = form.elements.album.value;
+      const message = form.elements.message.value.trim();
+
+      if (!name || !album || !message) {
+        formMessage.textContent = "Por favor completa todos los campos.";
+        formMessage.style.color = "#b91c1c";
+        return;
+      }
+
+      const subject = encodeURIComponent(`Nuevo comentario: ${name} - ${album}`);
+      const body = encodeURIComponent(
+        `Nombre: ${name}\nÁlbum: ${album}\n\nComentario:\n${message}`
+      );
+
+      formMessage.textContent = `Gracias, ${name}! Se ha abierto tu cliente de correo para enviar el comentario.`;
+      formMessage.style.color = "#166534";
+
+      window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
  </body>
 </html>

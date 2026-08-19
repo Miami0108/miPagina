@@ -41,7 +41,7 @@ img {
 .topbar {
  max-width: 1200px;
  margin: 0 auto;
- padding: 28px 24px 10px;
+ padding: 30px 25px;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -339,6 +339,85 @@ img {
  margin: 0;
  line-height: 1.7;
  color: rgba(24, 24, 27, 0.82);
+}
+
+.comments {
+ padding-top: 12px;
+}
+
+.comments-header {
+ margin-bottom: 18px;
+}
+
+.comments-header h2 {
+ margin: 0;
+ font-size: clamp(2rem, 3vw, 3rem);
+ letter-spacing: -0.06em;
+}
+
+.comment-form {
+ background: rgba(255, 255, 255, 0.74);
+ border: 1px solid rgba(17, 24, 39, 0.08);
+ box-shadow: var(--shadow);
+ border-radius: 28px;
+ padding: 26px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.field-row {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 18px;
+}
+
+.comment-form label {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ font-weight: 600;
+ color: var(--text);
+}
+
+.comment-form input,
+.comment-form select,
+.comment-form textarea {
+ width: 100%;
+ border: 1px solid rgba(17, 24, 39, 0.12);
+ border-radius: 16px;
+ background: rgba(255, 255, 255, 0.85);
+ padding: 0.9rem 1rem;
+ font: inherit;
+ color: var(--text);
+ transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comment-form input:focus,
+.comment-form select:focus,
+.comment-form textarea:focus {
+ outline: none;
+ border-color: rgba(59, 130, 246, 0.8);
+ box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.comment-form textarea {
+ resize: vertical;
+ min-height: 140px;
+}
+
+.form-actions {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.form-message {
+ margin: 0;
+ font-weight: 600;
+ min-height: 24px;
 }
 
 .about {
