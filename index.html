@@ -1,124 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogsito</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-       <h1 align="center">Mi Blogsito</h1>
-    <p>Aquí comparto cosas de música o cosas que me gusten o cosas que me den la gana poner aquí</p>
-    </header> 
-<hr>
-<br>
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Album Reviews</title>
+   <link rel="stylesheet" href="css/style.css" />
+ </head>
+ <body>
+   <header class="topbar">
+     <div class="brand">
+       <span class="brand-mark">L</span>
+       <span>luisito reviews</span>
+     </div>
+     <nav class="nav">
+       <a href="#albumes">Álbumes</a>
+       <a href="#about">Sobre mí</a>
+     </nav>
+   </header>
 
-<main>
-    <div id="album1">
-        <article>
-            <div style="text-align: center;">
-            <img src="img/TDF.jpg" width="200">
+   <main class="page-shell">
+     <section class="hero">
+       <div class="hero-copy">
+         <p class="eyebrow">Blog musical personal</p>
+         <h1>Opiniones sobre álbumes que me han marcado.</h1>
+         <p class="lead">
+           Aquí guardo discos, canciones y momentos que se quedaron conmigo.
+           Un rincón para compartir lo que escucho y lo que siento cuando suena cada una de estas obras.
+         </p>
+         <div class="hero-actions">
+           <a class="button primary" href="#albumes">Ver reseñas</a>
+           <a class="button ghost" href="#about">Conóceme</a>
+         </div>
+       </div>
+
+       <div class="hero-card">
+         <div class="mini-label">Favorito del momento</div>
+         <h2>What Happened To The Heart?</h2>
+         <p>Aurora</p>
+         <div class="rating">
+           <span>★★★★★</span>
+           <small>9.8/10</small>
+         </div>
+       </div>
+     </section>
+
+     <section class="stats" aria-label="estadísticas de la página">
+       <div class="stat">
+         <strong>3</strong>
+         <span>álbumes favoritos</span>
+       </div>
+       <div class="stat">
+         <strong>∞</strong>
+         <span>reproducciones</span>
+       </div>
+       <div class="stat">
+         <strong>100%</strong>
+         <span>sentimiento puro</span>
+       </div>
+     </section>
+
+     <section class="albums" id="albumes">
+       <article class="album-card album-card--pink">
+         <div class="cover-wrap">
+           <img src="img/TDF.jpg" alt="Portada de The Divine Femenine" />
+         </div>
+
+         <div class="album-body">
+           <div class="meta-row">
+             <span class="tag">R&B / Soul</span>
+             <span class="year">2016</span>
+           </div>
+           <h3>The Divine Femenine</h3>
+           <p class="artist">Mac Miller</p>
+
+           <div class="section-block">
+             <h4>¿Por qué es especial?</h4>
+             <p>
+               Este álbum es uno de los que más ha marcado mi vida; siento que fue un antes y un después.
+               Su mezcla de calma, sensualidad y vulnerabilidad lo convierte en una experiencia muy personal.
+             </p>
             </div>
 
-            <h2 >
-                The Divine Femenine
-                <br>
-                <span style="font-weight: normal; font-size: 16px;"><em>Mac Miller — 16 de Septiembre de 2016</em></span>
-            </h2> 
+           <div class="section-block">
+             <h4>Mi canción favorita</h4>
+             <p>
+               <strong>Stay</strong> fue la primera que escuché y, hasta hoy, sigue siendo una de las canciones que más repito.
+               Tiene ese balance perfecto entre emoción y detalle.
+             </p>
+           </div>
+         </div>
+       </article>
 
-           <h4>
-            ¿Porque es especial?
-           </h4>
-           <p>
-            Este álbum es uno de los que más ha marcado mi vida; creo que marca un antes y un después en ella.
-           </p>
+       <article class="album-card album-card--blue">
+         <div class="cover-wrap">
+           <img src="img/WHTTH.jpg" alt="Portada de What Happened To The Heart?" />
+         </div>
 
-           <h4>Mi canción favorita</h4>
-            <p >
-            La primera canción que escuché de este álbum fue <b>Stay</b>, y a día de hoy 
-            sigue siendo una de mis canciones preferidas; fácilmente la he escuchado más de 200 veces.
-            </p>
-        </article>
-    </div>
+         <div class="album-body">
+           <div class="meta-row">
+             <span class="tag">Indie / Pop</span>
+             <span class="year">2024</span>
+           </div>
+           <h3>What Happened To The Heart?</h3>
+           <p class="artist">Aurora</p>
 
-        <br>
-        <br>
+           <div class="section-block">
+             <h4>¿Por qué es especial?</h4>
+             <p>
+               Es mi álbum favorito de Aurora. Lo llevo en el corazón desde la primera escucha y me ha acompañado en momentos difíciles,
+               ayudándome a entender y a superar muchas cosas.
+             </p>
+           </div>
 
-    <div id="album2">
-        <article>
-            <div style="text-align: center;">
-            <img src="img/WHTTH.jpg" width="200">
-            </div>
+           <div class="section-block">
+             <h4>Mi canción favorita</h4>
+             <p>
+               <strong>Some Type of Skin</strong> es una de las canciones más personales que he escuchado.
+               Tiene la capacidad de llegar muy profundo sin necesidad de hacer ruido.
+             </p>
+           </div>
+         </div>
+       </article>
 
-            <h2 >
-                What Happened To The Heart?
-                <br>
-                <span style="font-weight: normal; font-size: 16px;"><em>Aurora - 07 de Junio de 2024</em></span>
-            </h2> 
+       <article class="album-card album-card--gray">
+         <div class="cover-wrap">
+           <img src="img/ROY.jpeg" alt="Portada del álbum Roy" />
+         </div>
 
-           <h4>
-            ¿Porque es especial?
-           </h4>
-           <p>
-           Mi álbum favorito de Aurora, llevo este disco en mi corazón desde que lo escuché por primera vez, 
-           y me ha acompañado en momentos difíciles de mi vida, y me ha ayudado a superarlos.
-           </p>
+         <div class="album-body">
+           <div class="meta-row">
+             <span class="tag">Alternativo</span>
+             <span class="year">2022</span>
+           </div>
+           <h3>Roy</h3>
+           <p class="artist">Álbum favorito de la adolescencia</p>
 
-           <h4>Mi canción favorita</h4>
-            <p >
-            Sin duda Some Type of Skin es una de mis canciones más personales, por no decir la más personal.
-            </p>
-        </article>
-    </div>
+           <div class="section-block">
+             <h4>¿Por qué es especial?</h4>
+             <p>
+               Marcó una etapa muy importante de mi adolescencia. Tiene esa energía que te devuelve recuerdos,
+               emociones y momentos que todavía se sienten muy presentes.
+             </p>
+           </div>
 
-        <br>
-        <br>
+           <div class="section-block">
+             <h4>Mi canción favorita</h4>
+             <p>
+               <strong>Moldes</strong> es la que más me representa. Tiene algo íntimo y tan directo que siempre me hace sentir en casa.
+             </p>
+           </div>
+         </div>
+       </article>
+     </section>
 
-    <div id="album3">
-        <article>
-            <div style="text-align: center;">
-            <img src="img/ROY.jpeg" width="200">
-            </div>
+     <section class="about" id="about">
+       <div class="about-card">
+         <p class="eyebrow">Sobre este espacio</p>
+         <h2>Un blog para guardar lo que me gusta escuchar.</h2>
+         <p>
+           Aquí comparto mis opiniones, mis canciones favoritas y los discos que me acompañan en cada etapa.
+           La música no solo se escucha, también se vive, se recuerda y se vuelve parte de uno.
+         </p>
+       </div>
+     </section>
+   </main>
 
-            <h2 >
-                Roy
-                <br>
-                <span style="font-weight: normal; font-size: 16px;"><em>23 de Noviembre de 2022</em></span>
-            </h2> 
-
-           <h4>
-            ¿Porque es especial?
-           </h4>
-           <p>
-          Marcó mi adolescencia
-           </p>
-
-           <h4>Mi canción favorita</h4>
-            <p >
-            Moldes
-            </p>
-        </article>
-    </div>
-    <br>
-    <br>
-
-    <div id="xd">
-        <p>
-            Ya me dio sueño, luego completo bien las descripciones, si alguien realmente se mete a ver mi blog,
-             mande captura de esto y le compro un helado de la michoacana.  
-        </p>
-    </div>
-
-
-    </main>
-
-    <br>
-    <hr>
-
-    <footer>
-        <p>Hecho por luisito. &copy; 2026</p>
-    </footer>
-
-</body>
+   <footer class="footer">
+     <p>Hecho por luisito. © 2026</p>
+   </footer>
+ </body>
 </html>
