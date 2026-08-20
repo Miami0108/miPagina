@@ -25,9 +25,22 @@ padding: 20px;
 border-radius: 50px;
 }
 
-.nav{
-    display: block;
-    padding: 30px;
+.nav-principal{
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    border-radius: 10px;
+    background-color: #60adff; 
+    padding: 10px 10px 10px; 
+}
+
+.nav-secundario{
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    border-radius: 10px;
+    background-color: #60adff; 
+    padding: 10px 10px 10px; 
 }
 
 body {
