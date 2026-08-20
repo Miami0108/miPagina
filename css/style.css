@@ -25,6 +25,11 @@ padding: 20px;
 border-radius: 50px;
 }
 
+.nav{
+    display: block;
+    padding: 30px;
+}
+
 body {
     background-color: #ffffff
     text-align: center;
